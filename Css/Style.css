@@ -9,6 +9,18 @@ div.navbar{
     justify-content:space-between;
     align-items:center;
 }
+#navlink1{
+    position: relative;
+    left: 190px;
+}
+#navlink2{
+    position: relative;
+    left: 100px;
+}
+#navlink3{
+    position: relative;
+    left: 10px;
+}
 a:link{
     font-weight: bold;
     text-decoration: none;
@@ -20,13 +32,16 @@ a:hover{
 #btn1{
     color: #013189;
     font-size: 16px;
+    position: relative;
+    left: 80px;
 }
 #btn2{
     background-color: rgb(1, 1, 121);
     border-radius: 1cm;
     color: white;
-    padding: 15px 32px;
-    font-size: 16px;
+    padding: 10px 30px;
+    font-size: 18px;
+    box-shadow: 5px 15px #7676761b;
 }
 #btn3{
     background-color: rgb(26, 249, 119);
@@ -41,24 +56,25 @@ a:hover{
     color: #013189;
     padding: 15px 32px;
     font-size: 16px;
+    position: relative;
+    left: 50px;
 }
 .div1{
     float: left;
     text-align: left;
-    justify-content: right;
 }
 #p1{
     font-size: 60px;
     color:#013189;
 }
 #p2{
-    font-size: 20px;
+    font-size: 22px;
     color:#013189;
 }
 .Img1{
     width:35%;
     position: relative;
-    right: -300px;
+    left: 330px;
 }
 .div2{
     box-sizing: border-box;
@@ -67,7 +83,7 @@ a:hover{
     width: 960px;
     padding: 40px;
     border-radius: 1cm;
-    background-image: linear-gradient(red,blue);
+    background-image:radial-gradient(rgba(255, 0, 0, 0.555),rgba(0, 0, 255, 0.555));
     border: 3px solid;
     box-shadow: 5px 10px #888888;
     border-color: white;
@@ -81,7 +97,6 @@ a:hover{
     border-radius: 1cm;
     margin: -4.8%;
     box-sizing: border-box;
-
 }
 #clickhere{
     color: yellow;
@@ -92,6 +107,7 @@ a:hover{
     text-align: justify;
     line-height: 2;
     font-size: large;
+    font-weight: bold;
 }
 #p4{
     text-align: center;
@@ -112,35 +128,41 @@ a:hover{
 .grid-item1 {
     background-color: white;
     border: 2px solid rgba(164, 216, 238, 0.8);
-    border-radius: 0.50cm;
+    border-radius: 0.30cm;
     padding: 20px;
     text-align: center;
     color:#013189;
     border-bottom: 5px solid yellow;
     box-shadow: 5px 5px #7a6d6d63;
     width: 80%;
+    position: relative;
+    left: 40px;
 }
 .grid-item2 {
     background-color: white;
     border: 2px solid rgba(164, 216, 238, 0.8);
-    border-radius: 0.50cm;
+    border-radius: 0.30cm;
     padding: 20px;
     text-align: center;
     color:#013189;
     border-bottom: 5px solid red;
     box-shadow: 5px 5px #7a6d6d63;
-    width: 80%;
+    width: 70%;
+    position: relative;
+    left: 75px;
 }
 .grid-item3 {
     background-color: white;
     border: 2px solid rgba(164, 216, 238, 0.8);
-    border-radius: 0.50cm;
+    border-radius: 0.30cm;
     padding: 20px;
     text-align: center;
     color: #013189;
     border-bottom: 5px solid green;
     box-shadow: 5px 5px #7a6d6d63;
-    width: 80%;
+    width: 60%;
+    position: relative;
+    left: 50px;
 }
 
 #p6{
@@ -181,7 +203,10 @@ a:hover{
     border-radius: 1cm;
     color:#013189;
     padding: 15px 32px;
-    font-size: 16px;  
+    font-size: 16px;
+    box-shadow: 5px 15px #7676761b;
+    position: relative;
+    left: 160px;
 }
 .grid-container2{
     display: grid;
@@ -246,10 +271,12 @@ a:hover{
     color: #013189;
     padding: 10px 2px;
     font-size: 16px;
-    width:20%;    
+    width:20%;
+    box-shadow: 5px 15px #7676761b;
+
 }
 .div8{
-    background: url(/home/yegappan/LandingPages/Img/skyblue1.jpg);
+    background: url(/home/yegappan/LandingPages/Img/skyblue2.jpg);
     height: 750px;
 }
 .Img3{
@@ -259,7 +286,7 @@ a:hover{
     top: 150px;
 }
 .div8-1{
-    background-color: #6a00ff46;
+    background-color: #0026ff46;
     width: 250px;
     height: 200px;
     /* opacity: 50%; */
@@ -283,7 +310,7 @@ a:hover{
     color: white;
 }
 .div8-3{
-    background-color: #6a00ff46;
+    background-color: #0026ff46;
     width: 250px;
     height: 200px;
     padding: 9px; 
@@ -294,7 +321,7 @@ a:hover{
     top: 20px;
 }
 .div8-4{
-    background-color: #6a00ff46;
+    background-color: #0026ff46;
     width: 250px;
     height: 200px;
     padding: 10px; 
@@ -305,7 +332,7 @@ a:hover{
     bottom: 180px;
 }
 .div8-5{
-    background-color: #6a00ff46;
+    background-color: #0026ff46;
     width: 250px;
     height: 200px;
     padding: 10px; 
