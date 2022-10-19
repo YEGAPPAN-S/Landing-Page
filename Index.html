@@ -1,8 +1,14 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Yegappan_S">
+    <meta name="description" content="Landing page">
     <title>Landing Page</title>
-    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="Css/Style.css">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="Css/Style.css" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -11,211 +17,283 @@
 
     <!--Navigation bar-->
     <header>
-        <div class="nav-bar">
-            <h1 class="header-title">EasyConnect</h1>
-            <div id="nav-link">
-                <a href="#">About us</a>
-                <a href="#">How it works</a>
-                <a href="#">FAQs</a>
-            </div>
-            <a id="partner-btn" href="#"><i class="fa fa-user-circle"></i> Partner Log in</a>
-            <button id="contact-btn"><i class="fa fa-phone"></i> +919876543210</button>
-        </div>
-        <a id="user-btn" href="#"><i class="fa fa-user-circle fa-3x"></i></a>
-        <div id="mobile-nav-link">
-            <div class="nav-bar" id="myNavbar">
-                <div id="mobile-nav-link">
-                    <a href="#">About Us</a>
-                    <a href="#">How its works</a>
+        <nav>
+            <div class="nav-bar">
+                <h1 class="header-title">EasyConnect</h1>
+                <div id="nav-link">
+                    <a href="#">About us</a>
+                    <a href="#">How it works</a>
                     <a href="#">FAQs</a>
                 </div>
+                <a id="partner-btn" href="#"><i class="fa fa-user-circle"></i> Partner Log in</a>
+                <button id="contact-btn"><i class="fa fa-phone"></i> +919876543210</button>
             </div>
-            <div class="menu-bar" onclick="toggleNavbar(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+            <a id="user-btn" href="#"><i class="fa fa-user-circle fa-3x"></i></a>
+            <div class="mobile-nav-link">
+                <div class="nav-bar" id="myNavbar">
+                    <div class="mobile-nav-link">
+                        <a href="#">About Us</a>
+                        <a href="#">How its works</a>
+                        <a href="#">FAQs</a>
+                    </div>
+                </div>
+                <div class="menu-bar" onclick="toggleNavbar(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
 
     <!-- Primary Div -->
-    <div class="primary-div">
-        <p id="primary-para1">Moving is hard.<br><span id="green-underline">We make it simple,</span><br>convenient and easy</p>
-        <p id="primary-para2">We set up all your utilities, mail forwarding, and other time , <br> Consuming moving tasks for you in ine easy step, for free.</p>
-        <button id="connect-btn">Connect me now <i class="fa fa-location-arrow"></i></button>
-        <button id="try-btn">Try For Free <i class="fa fa-location-arrow"></i></button>    
-    </div>
-    <img class="phone-img" src="Img/img1.png">
-
-    <!-- Content Div -->
-    <div class="content-div">
-        <div class="content-div2">
-            <p id="content-para">Got time for a coffee break? That's how long it takes to set up your utilities with us. Your persomal concierge will spend about <b>15 minutes</b> with you discussing your moving needs and offers. Time is precious and priceless for everyone. We should use our time properly in positive manner. Time is more than money as money spent can be earned again however once time spent can never be earned (<a id="clickhere" href="#">click here</a> to see how).</p>
+    <section class="primary">
+        <div class="primary-section">
+            <h1 id="primary-title">Moving is hard.<br><span id="green-underline">We make it simple,</span><br>convenient
+                and
+                easy</h1>
+            <p id="primary-para">We set up all your utilities, mail forwarding, and other time , <br> Consuming moving
+                tasks for you in ine easy step, for free.</p>
+            <button id="connect-btn">Connect me now <i class="fa fa-location-arrow"></i></button>
+            <button id="try-btn">Try For Free <i class="fa fa-location-arrow"></i></button>
         </div>
-    </div>
+        <img class="phone-img" src="Img/img1.png">
+    </section>
 
-    <!-- Grid Div -->
-    <div class="grid-div">
-        <p id="grid-para1">We Save You<br>Time, Money and Your Sanity</p>
-        <p id="grid-para2">We're with you every step of your move</p>
-        <div class="grid-container">
-            <div class="grid-time">
-                <i id="fa-clock" class="fa fa-clock-o fa-4x"></i>
-                <h2>Time</h2>
-                <p>Time is the longest distance between two places.</p>
-            </div>
+    <main>
 
-            <div class="grid-money">
-                <i id="fa-money-check-dollar" class="fa fa-money fa-4x"></i>
-                <h2>Money</h2> 
-                <p>Too many people spend money they earned..to buy things they don't want..to impress people that they don't like. </p>
+        <!-- Content Div -->
+        <section class="content">
+            <div class="content-parent">
+                <div class="content-child">
+                    <p id="content-para">Got time for a coffee break? That's how long it takes to set up your utilities
+                        with
+                        us.
+                        Your persomal concierge will spend about <b>15 minutes</b> with you discussing your moving needs
+                        and
+                        offers. Time is precious and priceless for everyone. We should use our time properly in positive
+                        manner.
+                        Time is more than money as money spent can be earned again however once time spent can never be
+                        earned
+                        (<a id="clickhere" href="#">click here</a> to see how).</p>
+                </div>
             </div>
+        </section>
 
-            <div class="grid-setting">
-                <i id="fa-cog" class="fa fa-gears fa-4x"></i>
-                <h2>Independent and local</h2> 
-                <p>Local independence is the underlying assumption of latent variable models. </p>
-            </div>
-        </div>
-    </div>
+        <!-- Grid Div -->
+        <section>
+            <div class="we-save-you">
+                <h1 id="we-save-you-title">We Save You<br>Time, Money and Your Sanity</h1>
+                <p id="we-save-you-para">We're with you every step of your move</p>
+                <div class="grid-container">
+                    <div class="grid-time">
+                        <i id="fa-clock" class="fa fa-clock-o fa-4x"></i>
+                        <h2>Time</h2>
+                        <p>Time is the longest distance between two places.</p>
+                    </div>
 
-    <!-- Step Process Div -->
-    <div class="process-div">
-        <div class="process-title">
-            <h1>How it works</h1>
-            <h3>Give us a call and we will do it</h3>
-        </div>
-        <div id="process-flex1">
-            <div class="process-step1">
-                <h3 id="yellow-heading">Step 1</h3>
-                <h2 id="white-heading">Let's Talk</h2>
-                <p id="white-para">We call you or you call us</p>
-                <a id="white-para" href="#">Connect me now <i id="white-para" class="fa fa-location-arrow"></i> </a>
-            </div>
+                    <div class="grid-money">
+                        <i id="fa-money-check-dollar" class="fa fa-money fa-4x"></i>
+                        <h2>Money</h2>
+                        <p>Too many people spend money they earned..to buy things they don't want..to impress people
+                            that
+                            they
+                            don't like. </p>
+                    </div>
 
-            <div id="car-img">
-                <img class="car-img" src="Img/car.png">
+                    <div class="grid-setting">
+                        <i id="fa-cog" class="fa fa-gears fa-4x"></i>
+                        <h2>Independent and local</h2>
+                        <p>Local independence is the underlying assumption of latent variable models. </p>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="process-step2">
-                <h3 id="yellow-heading">Step 2</h3>
-                <h2 id="white-heading">Tailored Advice</h2>
-                <p id="white-para">Talk to your personal moving expert Discuss the best deals avaliable to you for all your moving need.</p>
-            </div>
-        </div>
-        <div id="process-flex2">
-            <div class="process-step3">
-                <h3 id="yellow-heading">Step 3</h3>
-                <h2 id="white-heading">Behind the Scenes</h2>
-                <p id="white-para">We set everything up for you while you get back to the more important things in life.</p>
-            </div>
+        <!-- Step Process Div -->
+        <section>
+            <div class="step-process">
+                <div class="process-title">
+                    <h1>How it works</h1>
+                    <h3>Give us a call and we will do it</h3>
+                </div>
+                <div class="process-flex1">
 
-            <div class="process-step4">
-                <h3 id="yellow-heading">Step 4</h3>
-                <h2 id="white-heading">Happy times</h2>
-                <p id="white-para">Move into your new place,where everything has magically been organized and ready for you.</p>
-            </div>
-        </div>
-    </div>
+                    <div class="process-step1">
+                        <h2 class="yellow-heading">Step 1</h2>
+                        <h3 class="white-heading">Let's Talk</h3>
+                        <p class="white-para">We call you or you call us</p>
+                        <a id="white-para" href="#">Connect me now <i class="fa fa-location-arrow"></i> </a>
+                    </div>
 
-    <!-- Mobile Process Div -->
-    <div class="hidden-process-div">
-        <div class="process-title">
-            <h1>How it works</h1>
-            <h3>Give us a call and we will do it</h3>
-        </div>
-        <div id="process-flex1">
-            <div id="car-img">
-                <img class="car-img" src="Img/car.png">
-            </div>
-            <div class="process-step1">
-                <h3 id="yellow-heading">Step 1</h3>
-                <h2 id="white-heading">Let's Talk</h2>
-                <p id="white-para">We call you or you call us</p>
-                <a id="white-para" href="#">Connect me now <i id="white-para" class="fa fa-location-arrow"></i> </a>
-            </div>
+                    <div id="car-img">
+                        <img class="car-img" src="Img/car.png">
+                    </div>
 
-            <div class="process-step2">
-                <h3 id="yellow-heading">Step 2</h3>
-                <h2 id="white-heading">Tailored Advice</h2>
-                <p id="white-para">Talk to your personal moving expert Discuss the best deals avaliable to you for all your moving need.</p>
-            </div>
-        </div>
-        <div id="process-flex2">
-            <div class="process-step3">
-                <h3 id="yellow-heading">Step 3</h3>
-                <h2 id="white-heading">Behind the Scenes</h2>
-                <p id="white-para">We set everything up for you while you get back to the more important things in life.</p>
-            </div>
+                    <div class="process-step2">
+                        <h2 class="yellow-heading">Step 2</h2>
+                        <h3 class="white-heading">Tailored Advice</h3>
+                        <p class="white-para">Talk to your personal moving expert Discuss the best deals avaliable to
+                            you for
+                            all
+                            your moving need.</p>
+                    </div>
 
-            <div class="process-step4">
-                <h3 id="yellow-heading">Step 4</h3>
-                <h2 id="white-heading">Happy times</h2>
-                <p id="white-para">Move into your new place,where everything has magically been organized and ready for you.</p>
-            </div>
-        </div>
-    </div>
+                </div>
+                <div class="process-flex2">
 
-    <!-- Partner Grid  -->
-    <div class="partners-div">
-        <img class="star-img1" src="Img/star.png">
-        <p id="partners-heading">Our Supplier partners</p>
-        <p id="partners-para">We work with all the major suppliers in every vertical.</p>
-        <div class="partners-grid">
-            <div class="partners-item">
-                <img class="grid-img1" src="Img/tv.jpg">
-                <h2>Internet and TV</h2>
-                <p>Time is the longest distance between two places.</p>
-            </div>
+                    <div class="process-step3">
+                        <h2 class="yellow-heading">Step 3</h2>
+                        <h3 class="white-heading">Behind the Scenes</h3>
+                        <p class="white-para">We set everything up for you while you get back to the more important
+                            things in
+                            life.
+                        </p>
+                    </div>
 
-            <div class="partners-item">
-                <img class="grid-img2" src="Img/utility.jpg">
-                <h2>Utilities</h2> 
-                <p>Too many people spend money they earned..to buy things they don't want..to impress people that they don't like. </p>
-            </div>
+                    <div class="process-step4">
+                        <h2 class="yellow-heading">Step 4</h2>
+                        <h3 class="white-heading">Happy times</h3>
+                        <p class="white-para">Move into your new place,where everything has magically been organized and
+                            ready
+                            for
+                            you.</p>
+                    </div>
 
-            <div class="partners-item">
-                <img class="grid-img1" src="Img/moving.jpg">
-                <h2>Moving</h2> 
-                <p>Local independence is the underlying assumption of latent variable models. </p>
+                </div>
             </div>
+        </section>
 
-            <div class="partners-item">
-                <img class="grid-img2" src="Img/address.png">
-                <h2>Address updates</h2> 
-                <p>Local independence is the underlying assumption of latent variable models. </p>
+        <!-- Mobile Process Div -->
+        <section>
+            <div class="hidden-step-process">
+
+                <div class="process-title">
+                    <h1>How it works</h1>
+                    <h3>Give us a call and we will do it</h3>
+                </div>
+
+                <div class="process-flex1">
+
+                    <div id="car-img">
+                        <img class="car-img" src="Img/car.png">
+                    </div>
+
+                    <div class="process-step1">
+                        <h3 class="yellow-heading">Step 1</h3>
+                        <h2 class="white-heading">Let's Talk</h2>
+                        <p class="white-para">We call you or you call us</p>
+                        <a id="white-para" href="#">Connect me now <i id="white-para" class="fa fa-location-arrow"></i>
+                        </a>
+                    </div>
+
+                    <div class="process-step2">
+                        <h3 class="yellow-heading">Step 2</h3>
+                        <h2 class="white-heading">Tailored Advice</h2>
+                        <p class="white-para">Talk to your personal moving expert Discuss the best deals avaliable to
+                            you for
+                            all
+                            your moving need.</p>
+                    </div>
+
+                </div>
+
+                <div class="process-flex2">
+
+                    <div class="process-step3">
+                        <h3 class="yellow-heading">Step 3</h3>
+                        <h2 class="white-heading">Behind the Scenes</h2>
+                        <p class="white-para">We set everything up for you while you get back to the more important
+                            things in
+                            life.
+                        </p>
+                    </div>
+
+                    <div class="process-step4">
+                        <h3 class="yellow-heading">Step 4</h3>
+                        <h2 class="white-heading">Happy times</h2>
+                        <p class="white-para">Move into your new place,where everything has magically been organized and
+                            ready
+                            for
+                            you.</p>
+                    </div>
+
+                </div>
+
             </div>
-        </div>
-        <img class="star-img2" src="Img/star.png">
-    </div>
+        </section>
 
-    <!-- Referral div -->
-    <div class="referral-div">
-        <div class="inner-referral-div">
-            <h2>Become a referral partner</h2>
-            <p>Time is the longest distance between two places</p>
-            <p>Local independence is the underlying assumption of latent variable models. </p>
-            <p>Too many people spend money they earned..to buy things they don't want..to impress people that they don't like. </p>
-            <p><a id="clickhere" href="#">Click here.</a>Time is the longest distance between two places</p>
-            <button id="referral-btn">Get Started Now <i class="fa fa-location-arrow"></i></button>
-        </div>
-    </div>
+        <!-- Partner Grid  -->
+        <section>
+            <div class="our-partners">
+                <img class="star-img1" src="Img/star.png">
+                <h1 id="partners-heading">Our Supplier partners</h1>
+                <p id="partners-para">We work with all the major suppliers in every vertical.</p>
+                <div class="partners-grid">
+                    <div class="partners-item">
+                        <img class="grid-img1" src="Img/tv.jpg">
+                        <h2>Internet and TV</h2>
+                        <p>Time is the longest distance between two places.</p>
+                    </div>
+
+                    <div class="partners-item">
+                        <img class="grid-img2" src="Img/utility.jpg">
+                        <h2>Utilities</h2>
+                        <p>Too many people spend money they earned..to buy things they don't want..to impress people
+                            that
+                            they
+                            don't like. </p>
+                    </div>
+
+                    <div class="partners-item">
+                        <img class="grid-img1" src="Img/moving.jpg">
+                        <h2>Moving</h2>
+                        <p>Local independence is the underlying assumption of latent variable models. </p>
+                    </div>
+
+                    <div class="partners-item">
+                        <img class="grid-img2" src="Img/address.png">
+                        <h2>Address updates</h2>
+                        <p>Local independence is the underlying assumption of latent variable models. </p>
+                    </div>
+                </div>
+                <img class="star-img2" src="Img/star.png">
+            </div>
+        </section>
+
+        <!-- Referral div -->
+        <section>
+            <div class="referral">
+                <div class="inner-referral">
+                    <h2>Become a referral partner</h2>
+                    <p>Time is the longest distance between two places</p>
+                    <p>Local independence is the underlying assumption of latent variable models. </p>
+                    <p>Too many people spend money they earned..to buy things they don't want..to impress people that
+                        they
+                        don't
+                        like. </p>
+                    <p><a id="clickhere" href="#">Click here.</a>Time is the longest distance between two places</p>
+                    <button id="referral-btn">Get Started Now <i class="fa fa-location-arrow"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Fooder div / Contact div -->
     <footer>
-        <div class="footer-div">
+        <div class="contact-footer">
             <h1 class="footer-title">EasyConnect</h1>
             <button id="footer-btn">Connect me now <i class="fa fa-location-arrow"></i></button>
         </div>
 
         <div class="footer-grid-container">
             <div class="contact-grid">
-                <h2 id="grid-query">Have any Questions?<br>Feel free to email or call.</h2>
-                <h4 id="grid-query">Contact us</h4>
-                <a href="#"><i class="fa fa-phone"></i> +91 98765 43210</a> &nbsp
+                <h2 class="grid-query">Have any Questions?<br>Feel free to email or call.</h2>
+                <h4 class="grid-query">Contact us</h4>
+                <a href="#"><i class="fa fa-phone"></i> +91 98765 43210</a> &nbsp;
                 <a href="#"><i class="fa fa-envelope"></i> info@flycart.com</a><br>
-                <a href="#"><i id="fa-twitter" class="fa fa-twitter fa-2x"></i>Twiter</a> &nbsp
-                <a href="#"><i id="fa-facebook" class="fa fa-facebook-square fa-2x"></i> Facebook</a> &nbsp
+                <a href="#"><i id="fa-twitter" class="fa fa-twitter fa-2x"></i>Twiter</a> &nbsp;
+                <a href="#"><i id="fa-facebook" class="fa fa-facebook-square fa-2x"></i> Facebook</a> &nbsp;
                 <a href="#"><i id="fa-linkedin" class="fa fa-linkedin-square fa-2x"></i> Linkedin</a>
             </div>
 
@@ -245,6 +323,7 @@
             }
         }
     </script>
-    
+
 </body>
+
 </html>
