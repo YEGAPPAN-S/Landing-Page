@@ -12,22 +12,19 @@ body {
   align-items: center;
 }
 
-.nav-bar #nav-link {
-  display: flex;
-  gap: 20px;
+.nav-bar .nav-link {
   margin-left: 60px;
 }
 
 a:link {
   font-weight: bold;
   text-decoration: none;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .nav-bar #partner-btn {
   font-size: 16px;
-  position: relative;
-  left: 70px;
+  margin: 10px;
 }
 
 #contact-btn,
@@ -49,11 +46,6 @@ a:link {
   font-size: 16px;
   box-shadow: 5px 15px 10px#7676761b;
   border: 0px solid;
-}
-
-.contact-footer #footer-btn {
-  position: relative;
-  left: 160px;
 }
 
 .referral .inner-referral #referral-btn {
@@ -124,7 +116,7 @@ a:link {
 }
 
 .content-parent {
-  margin: 0 auto;
+  margin: 50px auto;
   min-width: 20px;
   padding: 40px;
   background: linear-gradient(to right, blue 25%, red 50%, blue 75%);
@@ -150,6 +142,7 @@ a:link {
 .we-save-you #we-save-you-title {
   font-size: 35px;
   font-weight: bold;
+  margin: 60px;
 }
 
 .we-save-you .grid-container,
@@ -165,7 +158,6 @@ a:link {
 
 .footer-grid-container {
   padding: 20px;
-  margin-left: 90px;
 }
 
 .we-save-you .grid-container .grid-time,
@@ -175,13 +167,13 @@ a:link {
   background-color: white;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 5px 5px 5px#7a6d6d63;
+  box-shadow: 15px 15px 45px #58505046;
   margin: 0 auto;
 }
 
 .our-partners .partners-grid .partners-item {
   border: 2px solid white;
-  border-radius: 0.5cm;
+  border-radius: 20px;
   width: 80%;
 }
 
@@ -190,11 +182,12 @@ a:link {
   display: flex;
   align-items: center;
 }
-
+.footer{
+  width: 1100px;
+  margin: 0 10% 0 10%;
+}
 .contact-footer {
-  justify-content: space-around;
-  position: relative;
-  right: 130px;
+  justify-content: space-between;
 }
 
 .referral {
@@ -210,7 +203,7 @@ a:link {
   border-radius: 0.3cm;
   text-align: left;
   color: #0b0b76;
-  border-bottom: 5px solid #0b0b76;
+  border-bottom: 7px solid #0b0b76;
   padding: 50px;
   font-size: 150%;
   background-color: rgb(219, 249, 239);
@@ -234,7 +227,7 @@ a:link {
 }
 
 .step-process {
-  background: url(/Img/skyblue.jpg);
+  background: url(../Img/skyblue.jpg);
   margin-top: 48px;
   height: 700px;
   padding: 10px;
@@ -252,20 +245,19 @@ a:link {
 
 .process-step1,
 .process-step2,
-.process-flex2 > div,
+.process-flex2>div,
 #car-img {
-  background-color: #0026ff46;
+  background-color: #0400ff33;
   width: 230px;
   margin: 10px;
   text-align: left;
   line-height: 25px;
   font-size: 16px;
-  padding: 10px;
+  padding: 25px;
   border-radius: 10px;
 }
 
 #car-img {
-  background-color: #0026ff11;
   padding: 35px;
   border-radius: 280px;
   text-align: center;
@@ -293,26 +285,19 @@ a:link {
 }
 
 .we-save-you .grid-container .grid-time {
-  border-bottom: 3px solid yellow;
+  border-bottom: 4px solid #ffcc00;
 }
 
 .we-save-you .grid-container .grid-money {
-  border-bottom: 3px solid red;
+  border-bottom: 4px solid red;
 }
 
 .we-save-you .grid-container .grid-setting {
-  border-bottom: 3px solid green;
-}
-
-.footer-grid-container .about-grid,
-.footer-grid-container .grid-query {
-  display: grid;
+  border-bottom: 4px solid green;
 }
 
 .nav-bar .header-title,
 .footer-title,
-a:visited,
-a:link,
 #partner-btn,
 #content-para,
 #we-save-you-title,
@@ -322,8 +307,14 @@ a:link,
   color: #040770;
 }
 
+a:visited,
+a:link {
+  color: #040870ce;
+}
+
 a:hover {
-  color: red;
+  color: #040770;
+  border-bottom: 3px solid #040770;
 }
 
 #we-save-you-para {
@@ -350,8 +341,12 @@ a:hover {
   font-size: 25px;
 }
 
-#partners-heading , .header-title{
+#partners-heading {
   font-size: 50px;
+}
+
+.header-title {
+  font-size: 30px;
 }
 
 .yellow-heading {
@@ -365,14 +360,24 @@ a:hover {
   color: white;
 }
 
+#white-para {
+  border-bottom: 1px solid white;
+}
+
+#yellowclick {
+  border-bottom: 2px solid #ffcc00;
+  color: #ffcc00;
+}
+
 #clickhere,
 .yellow-heading,
 #fa-clock {
-  color: yellow;
+  color: #ffcc00;
+  border-bottom: 0px;
 }
 
 #fa-clock {
-  text-shadow: 3px 3px 15px rgba(255, 255, 0, 0.6);
+  text-shadow: 3px 3px 15px #ffcc00da;
 }
 
 #user-btn,
@@ -581,9 +586,9 @@ a:hover {
 
   .hidden-step-process {
     display: block;
-    background: url(/Img/skyblue.jpg);
+    background: url(../Img/skyblue.jpg);
     margin-top: 30px;
-    height: 1300px;
+    height: 1450px;
     padding: 10px;
   }
 
@@ -594,12 +599,10 @@ a:hover {
     padding: 10px;
     gap: 20px;
     max-width: 1280px;
-    margin: auto 25px;
   }
 
   .nav-bar .header-title {
     font-size: 32px;
-    margin-right: 80px;
     margin-top: 10px;
   }
 
@@ -734,7 +737,7 @@ a:hover {
     font-size: medium;
   }
 
-  #nav-link,
+  .nav-link,
   #partner-btn,
   #contact-btn,
   .star-img1,
