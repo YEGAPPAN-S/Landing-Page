@@ -6,6 +6,11 @@ body {
   margin: 0;
 }
 
+:root {
+  --blue: #0b0b76;
+  --dark_blue: #040770;
+}
+
 .nav-bar {
   display: flex;
   justify-content: space-around;
@@ -35,7 +40,7 @@ a:link {
   border-radius: 50px;
   font-size: 18px;
   padding: 15px 32px;
-  color: #0b0b76;
+  color: var(--blue);
 }
 
 #footer-btn,
@@ -52,15 +57,15 @@ a:link {
   padding: 10px 2px;
   height: 50px;
   width: 19%;
-  border-color: #0b0b76;
+  border-color: var(--blue);
 }
 
 .nav-bar #contact-btn {
-  background-color: #0b0b76;
+  background-color: var(--blue);
   color: white;
   padding: 10px 30px;
   box-shadow: 1px 15px 20px#5c73f56e;
-  border: #0b0b76;
+  border: var(--blue);
 }
 
 .primary-section #try-btn {
@@ -69,7 +74,7 @@ a:link {
   font-size: 16px;
   position: relative;
   left: 50px;
-  border: 1px solid #0b0b76;
+  border: 1px solid var(--blue);
 }
 
 .primary-section {
@@ -81,7 +86,7 @@ a:link {
 
 .primary-section #primary-title {
   font-size: 60px;
-  color: #0b0b76;
+  color: var(--blue);
   font-weight: bolder;
 }
 
@@ -126,7 +131,7 @@ a:link {
 }
 
 .content-parent .content-child {
-  background-color: #ffffff;
+  background-color: white;
   opacity: 90%;
   padding: 10px;
   margin: -4.8%;
@@ -182,10 +187,11 @@ a:link {
   display: flex;
   align-items: center;
 }
-.footer{
-  width: 1100px;
+
+.footer {
   margin: 0 10% 0 10%;
 }
+
 .contact-footer {
   justify-content: space-between;
 }
@@ -202,11 +208,11 @@ a:link {
   background-color: white;
   border-radius: 0.3cm;
   text-align: left;
-  color: #0b0b76;
-  border-bottom: 7px solid #0b0b76;
+  color: var(--blue);
+  border-bottom: 7px solid var(--blue);
   padding: 50px;
   font-size: 150%;
-  background-color: rgb(219, 249, 239);
+  background-color: rgb(196, 253, 234);
   line-height: 1.5;
 }
 
@@ -304,7 +310,7 @@ a:link {
 #we-save-you-para,
 #partners-heading,
 #partners-para {
-  color: #040770;
+  color: var(--dark_blue);
 }
 
 a:visited,
@@ -313,8 +319,8 @@ a:link {
 }
 
 a:hover {
-  color: #040770;
-  border-bottom: 3px solid #040770;
+  color: var(--dark_blue);
+  border-bottom: 3px solid var(--dark_blue);
 }
 
 #we-save-you-para {
@@ -395,7 +401,7 @@ a:hover {
 .partners-item,
 .about-grid,
 .grid-query {
-  color: #0b0b76;
+  color: var(--blue);
 }
 
 #content-para,
@@ -462,7 +468,8 @@ a:hover {
   }
 
   .contact-footer {
-    right: 80px;
+    justify-content: left;
+    gap: 200px;
   }
 
   .partners-item {
@@ -494,7 +501,6 @@ a:hover {
 @media only screen and (max-width: 360px) {
   body {
     font-size: 8px;
-    overflow-x: hidden;
     width: 100%;
   }
 
@@ -601,6 +607,10 @@ a:hover {
     max-width: 1280px;
   }
 
+  .nav-bar {
+    justify-content: space-between;
+  }
+
   .nav-bar .header-title {
     font-size: 32px;
     margin-top: 10px;
@@ -653,7 +663,7 @@ a:hover {
   .bar3 {
     width: 24px;
     height: 2px;
-    background-color: #040770;
+    background-color: var(--dark_blue);
     margin: 6px 0;
     transition: 0.4s;
   }
@@ -726,7 +736,12 @@ a:hover {
   .contact-footer .footer-title,
   .nav-bar.responsive a,
   .nav-bar a.menu-bar {
-    color: #040770;
+    color: var(--dark_blue);
+  }
+
+  .contact-footer {
+    justify-content: left;
+    gap: 50px;
   }
 
   #white-para {
